@@ -8,9 +8,11 @@ Welcome to the Visier Engineering Blog. We will share how we build, operate, and
 
 Visier is a people analytics company focused on AI-powered workforce insights. Its platform helps organizations bring people and work data together to deliver workforce intelligence and support better decisions across the employee lifecycle. Visier was founded in 2010 and is headquartered in Vancouver, British Columbia, with offices and team members worldwide.
 
-## What to expect here
+## Latest post
 
-This is a placeholder page for now. Upcoming posts will cover:
+- [Why Analytics Breaks Under Change (and How Visier's Subject Model Helps)](Feb-01-2026-Part-1-why-analytics-breaks-under-change.md)
+
+More posts will cover:
 
 - Architecture and platform engineering
 - Data modeling and analytics at scale
