@@ -1,5 +1,7 @@
 # Why Analytics Breaks Under Change (and How Visier’s Subject Model Helps)
 
+[Back to the Engineering Blog index](index.md) | [Visier Developer Docs](https://docs.visier.com/developer/developer.htm)
+
 Visier has achieved significant financial success, but this series is not about the business story. It’s about the **technical decisions** that make Visier different—especially how we handle **constant change** in real‑world data.
 
 Modern organizations live in a state of flux:
@@ -183,3 +185,5 @@ In **Part 2**, we’ll dig into:
 
 - The **Event Stream Loader (ESL)**: how we implement this state/event approach in practice.
 - **Visier DB**: a temporal, in‑memory, object‑based engine designed for rich analytics over time.
+
+Return to the [Engineering Blog index](index.md) for the latest posts.
