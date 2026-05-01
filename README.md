@@ -21,3 +21,20 @@ More posts will cover:
 - Engineering culture and career growth at Visier
 
 If you are looking for product information or company news, visit Visier's public website.
+
+## Local preview
+
+Install the site dependencies into the repository so the local preview does not modify your global Ruby environment:
+
+```bash
+bundle config set --local path vendor/bundle
+bundle install
+```
+
+Serve the GitHub Pages site locally from the `docs/` directory:
+
+```bash
+bundle exec jekyll serve --source docs
+```
+
+Preview the site at `http://127.0.0.1:4000`.
