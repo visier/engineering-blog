@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% if page.title %}{{ page.title | escape }} | {% endif %}{{ site.title | escape }}</title>
+    <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | escape }}">
+    <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  </head>
+  <body>
+    <header class="site-header" role="banner">
+      <div class="site-header__inner">
+        <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title | escape }}</a>
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a href="{{ '/' | relative_url }}">Home</a>
+          <a href="https://docs.visier.com/developer/developer.htm">Developer Docs</a>
+        </nav>
+      </div>
+    </header>
+    <main class="page-content" aria-label="Content">
+      <article class="wrapper prose">
+        {% if page.author or page.posted_date %}
+          <p class="post-meta">
+            {% if page.author %}<span>By {{ page.author | escape }}</span>{% endif %}
+            {% if page.author and page.posted_date %}<span aria-hidden="true">•</span>{% endif %}
+            {% if page.posted_date %}<span>{{ page.posted_date | escape }}</span>{% endif %}
+          </p>
+        {% endif %}
+        {{ content }}
+      </article>
+    </main>
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <span>{{ site.description | escape }}</span>
+      </div>
+    </footer>
+  </body>
+</html>

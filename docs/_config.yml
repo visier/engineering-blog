@@ -1,0 +1,14 @@
+title: Visier Engineering Blog
+description: Engineering writing about how Visier builds, operates, and evolves its technology.
+theme: minima
+markdown: kramdown
+permalink: pretty
+
+sass:
+  style: compressed
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default

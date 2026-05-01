@@ -1,23 +1,29 @@
+---
+title: Home
+---
+
 # Visier Engineering Blog
 
-![Visier engineering blog banner](images/visier-engineering-banner.svg)
-
-Welcome to the Visier Engineering Blog. We will share how we build, operate, and evolve the technology behind Visier.
-
-## About Visier
-
-Visier is a people analytics company focused on AI-powered workforce insights. Its platform helps organizations bring people and work data together to deliver workforce intelligence and support better decisions across the employee lifecycle. Visier was founded in 2010 and is headquartered in Vancouver, British Columbia, with offices and team members worldwide.
+This blog covers how Visier builds, operates, and evolves the technology behind its analytics and AI platform.
 
 ## Latest post
 
-- [Why Analytics Breaks Under Change (and How Visier's Subject Model Helps)](Feb-01-2026-Part-1-why-analytics-breaks-under-change.md)
+[Why Analytics Breaks Under Change](Feb-01-2026-Part-1-why-analytics-breaks-under-change.md)
 
-More posts will cover:
+Part 1 of the series on why row-centric BI pipelines become fragile under schema drift, source churn, and temporal complexity, and how Visier's subject model addresses that problem.
+
+Data modeling • Temporal analytics • Platform architecture
+
+## About Visier
+
+Visier builds AI-powered workforce intelligence. Its platform brings people and work data together so organizations can make better decisions across hiring, mobility, compensation, productivity, and organizational change.
+
+## What to expect
 
 - Architecture and platform engineering
 - Data modeling and analytics at scale
 - AI and ML in people insights
 - Security, privacy, and compliance
-- Engineering culture and career growth at Visier
+- Engineering culture and career growth
 
-If you are looking for product information or company news, visit Visier's public website.
+For product information or company news, visit [Visier's public website](https://www.visier.com).

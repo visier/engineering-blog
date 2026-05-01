@@ -1,8 +1,15 @@
+---
+title: Why Analytics Breaks Under Change (and How Visier's Subject Model Helps)
+excerpt: Why row-centric analytics pipelines become brittle under constant change, and how Visier models subjects, states, and events over time.
+author: Vincent Chu
+posted_date: Feb 2026
+---
+
 # Why Analytics Breaks Under Change (and How Visier’s Subject Model Helps)
 
 [Back to the Engineering Blog index](index.md) | [Visier Developer Docs](https://docs.visier.com/developer/developer.htm)
 
-Visier has achieved significant financial success, but this series is not about the business story. It’s about the **technical decisions** that make Visier different—especially how we handle **constant change** in real‑world data.
+Visier has achieved significant financial success, but this series is not about the business story. It’s about the **technical decisions** that make Visier different, especially how we handle **constant change** in real‑world data.
 
 Modern organizations live in a state of flux:
 
@@ -80,7 +87,7 @@ Crucially:
 
 ## Why Traditional ETL Struggles Here
 
-Consider an organization with multiple systems—a very common situation. There are often **multiple core HR systems** (e.g., different systems by region, or legacy and new HR coexisting), not only systems covering different domains:
+Consider an organization with multiple systems, a very common situation. There are often **multiple core HR systems** (e.g., different systems by region, or legacy and new HR coexisting), not only systems covering different domains:
 
 - Core HR system(s) for demographics and job data (often more than one).
 - Performance system for reviews.
