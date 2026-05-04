@@ -52,7 +52,7 @@ This event/state model makes it much easier to:
 
 ### Schema-Agnostic Transformations
 
-A key design choice is to be **schema agnostic**:
+A key design choice is to be **schema-agnostic**:
 
 - We don't bake into code:
   - "Column A in file X becomes column B in table Y."
@@ -180,7 +180,7 @@ A **cohort** in Visier is a **time-locked filter** over subjects.
 Conceptually:
 
 - Define a set of subjects based on conditions **at a particular time**,
-- Then track that set's behavior **over subsequent time**.
+- Then track that set's behavior **over subsequent time period**.
 
 ### Example 1: Hire Cohorts and Survival Curves
 
