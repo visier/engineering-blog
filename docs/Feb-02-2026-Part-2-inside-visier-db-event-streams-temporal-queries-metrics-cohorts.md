@@ -1,6 +1,6 @@
 ---
 title: "Inside Visier DB: Event Streams, Temporal Queries, Metrics, and Cohorts"
-excerpt: "How Visier ingests data as states and events, how Visier DB executes temporal analytics, and how metrics and cohorts become reusable first-class concepts."
+excerpt: "How Visier ingests data as states and events, how Visier Database (Visier DB) executes temporal analytics, and how metrics and cohorts become reusable first-class concepts."
 author: Vincent Chu
 posted_date: May 2026
 ---
@@ -57,14 +57,14 @@ A key design choice is to be **schema-agnostic**:
 - We don't bake into code:
   - "Column A in file X becomes column B in table Y."
 - Instead, we express:
-  - "This field in this feed maps to this **analytic property** of this **subject**."
+  - "This field in this feed maps to this analytic **property** of this **subject**."
 
 Benefits:
 
 - **Corrections and restatements** can be applied without rebuilding the pipeline.
 - **Schema changes in sources** (e.g., renaming or adding columns) don't require:
   - Rewriting every transformation step,
-  - Updating long chains of SELECT/INSERT statements.
+  - Updating long chains of `SELECT/INSERT` statements.
 
 Business rules are written in terms of **analytic meaning**, not physical schema.
 
@@ -86,7 +86,7 @@ That's what **Visier DB** is designed for.
 
 ### Object-Based, Not Row-Based
 
-Visier DB is a **temporal, in-memory, object-based engine**:
+Visier Database (Visier DB) is a **temporal, in-memory, object-based engine**:
 
 - The fundamental query unit is the **state of an object (subject)**, not a raw row.
 - Example query:
@@ -201,7 +201,7 @@ This yields a **survival curve**:
 
 These use cases rely on cohorts being:
 
-- **First-class objects in the database**, not just ad-hoc WHERE clauses.
+- **First-class objects in the database**, not just ad-hoc `WHERE` clauses.
 - Defined once, reused across multiple analyses and metrics.
 
 ---
