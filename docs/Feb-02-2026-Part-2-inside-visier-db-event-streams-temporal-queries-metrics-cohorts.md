@@ -46,7 +46,7 @@ This event/state model makes it much easier to:
 - Handle delayed arrivals and historical corrections.
 - Keep a coherent, analytic view of the world as of any date.
 
-![Raw data sources are converted into a unified event stream, then derived into time-based subject states](images/Engineering_Blog_2026-02-06.png)
+![Raw data sources are converted into a unified event stream, then derived into time-based subject states](images/unified-event-stream-to-subject-states.png)
 
 *Figure 1: The Event Stream Loader turns heterogeneous source data into a unified event stream, then derives time-based subject states.*
 
@@ -68,7 +68,7 @@ Benefits:
 
 Business rules are written in terms of **analytic meaning**, not physical schema.
 
-![Traditional ETL schema coupling compared with schema-agnostic analytic mapping](images/Engineering_Blog_2026-02-04.png)
+![Traditional ETL schema coupling compared with schema-agnostic analytic mapping](images/schema-agnostic-analytic-mapping.png)
 
 *Figure 2: Schema-agnostic mapping decouples analytic meaning from brittle source schemas.*
 
@@ -123,7 +123,7 @@ This allows us to answer questions like:
 - "What was headcount by department **before** the big reorg last year?"
 - "How did exits vary across managers, using the reporting structure at the time of each exit?"
 
-![Before and after organization restructure reporting with time-aware grouping](images/Engineering_Blog_2026-02-05.png)
+![Before and after organization restructure reporting with time-aware grouping](images/time-aware-org-restructure-reporting.png)
 
 *Figure 3: Time-aware grouping lets the same people roll up through the correct structure for each query date.*
 

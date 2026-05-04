@@ -56,7 +56,7 @@ Instead of designing around tables and rows from each source system, we think in
 
 > “What is this **subject**? What are the **properties** we care about? How do they evolve over time?”
 
-![Subject- and time-centric data model: subjects, properties, and time as first-class dimensions](images/Engineering_Blog_2026-02-01.drawio.png)
+![Subject- and time-centric data model: subjects, properties, and time as first-class dimensions](images/subject-time-centric-data-model.drawio.png)
 
 *Figure 1: The subject-centric view—real-world entities with properties and relationships, modeled over time.*
 
@@ -116,7 +116,7 @@ The problems:
   - Dashboards,
   - Ad‑hoc queries.
 
-![Traditional ETL vs. multi-source, time-varying reality](images/Engineering_Blog_2026-02-02.drawio.png)
+![Traditional ETL vs. multi-source, time-varying reality](images/traditional-etl-vs-time-varying-reality.drawio.png)
 
 *Figure 2: Why traditional ETL struggles—multiple sources, different cadences, and current-state focus lead to fragile pipelines.*
 
@@ -154,7 +154,7 @@ This leads to a few key principles:
    - Business rules are defined in terms of **subject properties**, not specific source columns.
    - When schema changes, you don’t have to rewrite every SELECT/INSERT in the pipeline.
 
-![Events, states, and schema-agnostic mapping](images/Engineering_Blog_2026-02-03.drawio.png)
+![Events, states, and schema-agnostic mapping](images/events-states-schema-agnostic-mapping.drawio.png)
 
 *Figure 3: From rows to states and events—schema-agnostic mapping keeps business rules independent of source structure.*
 
