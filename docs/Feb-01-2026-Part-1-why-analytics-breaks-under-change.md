@@ -188,7 +188,7 @@ This first part described:
 - Why traditional row‑centric ETL struggles with multi‑source, time‑varying data.
 - How modeling **states and events** decouples analytics from brittle source schemas.
 
-In **[Part 2](Feb-02-2026-Part-2-inside-visier-db-event-streams-temporal-queries-metrics-cohorts.md)**, we’ll dig into:
+In **[Part 2](May-01-2026-Part-2-inside-visier-db-event-streams-temporal-queries-metrics-cohorts.md)**, we’ll dig into:
 
 - The **Event Stream Loader (ESL)**: how we implement this state/event approach in practice.
 - **Visier DB**: a temporal, in‑memory, object‑based engine designed for rich analytics over time.
