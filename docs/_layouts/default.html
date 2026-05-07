@@ -22,7 +22,16 @@
       <article class="wrapper prose">
         {% if page.author or page.posted_date %}
           <p class="post-meta">
-            {% if page.author %}<span>By {{ page.author | escape }}</span>{% endif %}
+            {% if page.author %}
+              <span>
+                By
+                {% if page.author_url %}
+                  <a href="{{ page.author_url | escape }}">{{ page.author | escape }}</a>
+                {% else %}
+                  {{ page.author | escape }}
+                {% endif %}
+              </span>
+            {% endif %}
             {% if page.author and page.posted_date %}<span aria-hidden="true">•</span>{% endif %}
             {% if page.posted_date %}<span>{{ page.posted_date | escape }}</span>{% endif %}
           </p>
