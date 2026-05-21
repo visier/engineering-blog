@@ -15,7 +15,7 @@ In [Part 1](Feb-01-2026-Part-1-why-analytics-breaks-under-change.md) we looked a
 In this part, we'll focus on:
 
 - How we ingest data as **states and events** using the Event Stream Loader.
-- How **Visier DB**, a temporal, in-memory, object-based engine, executes analytics.
+- How **Visier DB**, a temporal object-based engine, executes analytics.
 - How we model **metrics** and **cohorts** as first-class concepts.
 
 ---
@@ -87,7 +87,7 @@ That's what **Visier DB** is designed for.
 
 ### Object-Based, Not Row-Based
 
-Visier Database (Visier DB) is a **temporal, in-memory, object-based engine**:
+Visier Database (Visier DB) is a **temporal object-based engine**:
 
 - The fundamental query unit is the **state of an object (subject)**, not a raw row.
 - Example query:
