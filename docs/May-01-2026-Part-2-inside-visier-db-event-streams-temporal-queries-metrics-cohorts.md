@@ -3,7 +3,9 @@ title: "Inside Visier DB: Event Streams, Temporal Queries, Metrics, and Cohorts"
 excerpt: "How Visier ingests data as states and events, how Visier Database (Visier DB) executes temporal analytics, and how metrics and cohorts become reusable first-class concepts."
 author: Vincent Chu
 author_url: https://www.linkedin.com/in/vincentchu/
+date: 2026-05-01
 posted_date: May 2026
+rss: true
 ---
 
 # Inside Visier DB: Event Streams, Temporal Queries, Metrics, and Cohorts

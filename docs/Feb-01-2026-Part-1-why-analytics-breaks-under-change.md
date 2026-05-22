@@ -3,7 +3,9 @@ title: Why Analytics Breaks Under Change (and How Visier's Subject Model Helps)
 excerpt: Why row-centric analytics pipelines become brittle under constant change, and how Visier models subjects, states, and events over time.
 author: Vincent Chu
 author_url: https://www.linkedin.com/in/vincentchu/
+date: 2026-02-01
 posted_date: Feb 2026
+rss: true
 ---
 
 # Why Analytics Breaks Under Change (and How Visier’s Subject Model Helps)

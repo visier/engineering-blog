@@ -6,6 +6,8 @@ This blog covers how Visier builds, operates, and evolves the technology behind 
 
 Visit the blog at [engineering.visier.com](https://engineering.visier.com).
 
+Subscribe to the RSS feed at [engineering.visier.com/feed.xml](https://engineering.visier.com/feed.xml).
+
 ## Latest post
 
 ### [Inside Visier DB: Event Streams, Temporal Queries, Metrics, and Cohorts](docs/May-01-2026-Part-2-inside-visier-db-event-streams-temporal-queries-metrics-cohorts.md)
