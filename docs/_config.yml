@@ -1,5 +1,6 @@
 title: Visier Engineering Blog
 description: Engineering writing about how Visier builds, operates, and evolves its technology.
+url: https://engineering.visier.com
 theme: minima
 markdown: kramdown
 permalink: pretty

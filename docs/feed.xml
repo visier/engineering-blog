@@ -1,0 +1,30 @@
+---
+layout: null
+---
+<?xml version="1.0" encoding="UTF-8"?>
+{% assign feed_pages = site.pages | where: "rss", true | sort: "date" | reverse -%}
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>{{ site.title | xml_escape }}</title>
+    <description>{{ site.description | xml_escape }}</description>
+    <link>{{ '/' | absolute_url }}</link>
+    <atom:link href="{{ '/feed.xml' | absolute_url }}" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    {% if feed_pages.size > 0 -%}
+    <lastBuildDate>{{ feed_pages.first.date | date_to_rfc822 }}</lastBuildDate>
+    {% endif -%}
+    <generator>Jekyll</generator>
+    {% for post in feed_pages -%}
+    <item>
+      <title>{{ post.title | xml_escape }}</title>
+      <description>{{ post.excerpt | default: post.content | markdownify | strip_html | normalize_whitespace | xml_escape }}</description>
+      <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
+      <link>{{ post.url | absolute_url }}</link>
+      <guid isPermaLink="true">{{ post.url | absolute_url }}</guid>
+      {% if post.author -%}
+      <dc:creator>{{ post.author | xml_escape }}</dc:creator>
+      {% endif -%}
+    </item>
+    {% endfor -%}
+  </channel>
+</rss>
