@@ -85,7 +85,7 @@ The technical decisions we've described -- temporal modeling, event streams, and
 From the early days:
 
 - The core engine was accompanied by on the order of **100k automated test cases**.
-- Today, of the many automated test cases, there are roughly **40,000-50,000 tests** focused on the **core aggregation logic** alone.
+- Today, of the many automated test cases, there are roughly **40,000-50,000 tests** focused on just the **core aggregation logic** alone.
 
 These tests have several important characteristics.
 
