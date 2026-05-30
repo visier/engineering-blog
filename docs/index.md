@@ -8,19 +8,13 @@ This blog covers how Visier builds, operates, and evolves the technology behind 
 
 ## Latest post
 
-[Building and Maintaining Visier DB: One Cached Copy, Security, and Engineering Discipline](May-24-2026-Part-3-building-and-maintaining-visier-db-one-cached-copy-security-engineering-discipline.md)
-
-Part 3 of the series on how Visier's cache-copy architecture preserves source-of-truth semantics, and how test automation, code quality, and dependency discipline help keep Visier DB sustainable.
-
-Cache-copy architecture • Security and governance • Engineering discipline
-
-## Earlier posts
-
 [Inside Visier DB: Event Streams, Temporal Queries, Metrics, and Cohorts](May-01-2026-Part-2-inside-visier-db-event-streams-temporal-queries-metrics-cohorts.md)
 
 Part 2 of the series on how Visier ingests data as states and events, executes temporal analytics in Visier DB, and models metrics and cohorts as reusable time-aware concepts.
 
 Event streams • Temporal queries • Metrics and cohorts
+
+## Earlier posts
 
 [Why Analytics Breaks Under Change](Feb-01-2026-Part-1-why-analytics-breaks-under-change.md)
 
