@@ -1,7 +1,7 @@
 ---
 title: "Building and Maintaining Visier DB: One Cached Copy, Security, and Engineering Discipline"
 excerpt: "How Visier's cache-copy architecture preserves source-of-truth semantics, and how test automation, code quality, and dependency discipline help keep Visier DB sustainable."
-author: Vincent Chu
+author: Vincent, Ali, Devyn, Brett
 author_url: https://www.linkedin.com/in/vincentchu/
 date: 2026-05-24
 posted_date: May 2026
