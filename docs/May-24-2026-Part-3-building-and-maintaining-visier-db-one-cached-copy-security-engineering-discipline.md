@@ -161,15 +161,15 @@ Key considerations include:
 
 ![Decision framework for choosing between a third-party library and building in-house for critical analytics infrastructure](images/third-party-library-vs-build-in-house-decision-framework.png)
 
-*Figure 2: For critical analytics infrastructure, the build-vs.-buy decision depends on strategic importance, maintainability, responsiveness, quality, and control. The named examples reflect Visier's historical evaluation context, not current assessments of those projects.*
+*Figure 2: For critical analytics infrastructure, the build-vs.-buy decision depends on strategic importance, maintainability, responsiveness, quality, and control.*
 
-One positive example is the open-source database **H2**. Our experience with H2 has included:
+In one positive third-party library experience, we saw:
 
 - Good responsiveness.
 - Bug fixes and improvements accepted quickly.
 - A collaborative relationship.
 
-A historical example from the other direction was the open-source OLAP engine **Mondrian**, as we experienced it roughly a decade ago. This is not meant as a current assessment of the project or its maintainers. At the time, for the specific critical-path use case we had, we found:
+In a historical example from the other direction, roughly a decade ago, we had a critical third-party OLAP dependency that no longer fit our requirements. This is not meant as a current assessment of any specific project or maintainer group. At the time, for the specific critical-path use case we had, we found:
 
 - We did not have enough control over the roadmap and release cadence.
 - Some issues important to our use case were not resolved quickly enough for a core platform dependency.
