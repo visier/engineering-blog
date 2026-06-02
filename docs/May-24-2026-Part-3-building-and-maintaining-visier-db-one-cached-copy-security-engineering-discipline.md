@@ -1,6 +1,6 @@
 ---
 title: "Building and Maintaining Visier DB: One Cached Copy, Security, and Engineering Discipline"
-excerpt: "How Visier's cache-copy architecture preserves source-of-truth semantics, and how test automation, code quality, and dependency discipline help keep Visier DB sustainable."
+excerpt: "How Visier's cache-copy architecture preserves source-of-truth semantics and how test automation, code quality, and dependency discipline help keep Visier DB sustainable."
 author: Vincent, Ali, Devyn, Brett
 author_url: https://www.linkedin.com/in/vincentchu/
 date: 2026-05-24
@@ -78,18 +78,18 @@ This does not mean the one cached copy architecture is the only mechanism for da
 
 ## Test Automation and Code Quality
 
-The technical decisions we've described -- temporal modeling, event streams, and one cached copy architecture -- introduce significant complexity. To evolve such a system safely, we depend heavily on **test automation** and disciplined **code review**.
+The technical decisions we've described (temporal modeling, event streams, and one cached copy architecture) introduce significant complexity. To evolve such a system safely, we depend heavily on **test automation** and disciplined **code review**.
 
 ### Heavyweight Test Automation from the Start
 
 From the early days:
 
 - The core engine was accompanied by on the order of **100k automated test cases**.
-- Today, of the many automated test cases, there are roughly **40,000-50,000 tests** focused on just the **core aggregation logic** alone.
+- Today, of the many automated test cases, there are roughly **40k-50k tests** focused on just the **core aggregation logic** alone.
 
 These tests have several important characteristics.
 
-### Table-In / Result-Out
+#### Table-In / Result-Out
 
 Tests are often structured around specific input tables and expected analytic results:
 
@@ -98,7 +98,7 @@ Tests are often structured around specific input tables and expected analytic re
 
 This style keeps tests close to the behavior users depend on, rather than only checking internal implementation details.
 
-### Business-Meaningful Tests
+#### Business-Meaningful Tests
 
 Good tests encode clear business requirements. They should be understandable and verifiable by humans, not just snapshots of internal engine behavior. For an analytics engine, that means tests should make it clear what business question is being asked and what answer is expected:
 
@@ -161,7 +161,7 @@ Key considerations include:
 
 ![Decision framework for choosing between a third-party library and building in-house for critical analytics infrastructure](images/third-party-library-vs-build-in-house-decision-framework.png)
 
-*Figure 2: For critical analytics infrastructure, the build-vs.-buy decision depends on strategic importance, maintainability, responsiveness, quality, and control.*
+*Figure 2: For critical analytics infrastructure, the build vs. buy decision depends on strategic importance, maintainability, responsiveness, quality, and control.*
 
 In one positive third-party library experience, we saw:
 
@@ -201,7 +201,7 @@ The broader lesson:
 
 Across this three-part series, we've covered:
 
-1. **[Why analytics breaks under change](Feb-01-2026-Part-1-why-analytics-breaks-under-change.md)**, and how a **subject- and time-centric model** helps.
+1. **[Why analytics breaks under change](Feb-01-2026-Part-1-why-analytics-breaks-under-change.md)** and how a **subject- and time-centric model** helps.
 2. How **[event-driven ingestion and a temporal, object-based engine](May-01-2026-Part-2-inside-visier-db-event-streams-temporal-queries-metrics-cohorts.md)** (Visier DB) support rich metrics and cohorts.
 3. How a **one cached copy architecture**, strong **test automation**, and careful decisions about **third-party dependencies** make the system sustainable over time.
 

@@ -12,7 +12,7 @@ Subscribe to the RSS feed at [engineering.visier.com/feed.xml](https://engineeri
 
 ### [Building and Maintaining Visier DB: One Cached Copy, Security, and Engineering Discipline](docs/May-24-2026-Part-3-building-and-maintaining-visier-db-one-cached-copy-security-engineering-discipline.md)
 
-Part 3 of the series on how Visier's cache-copy architecture preserves source-of-truth semantics, and how test automation, code quality, and dependency discipline help keep Visier DB sustainable.
+Part 3 of the series on how Visier's cache-copy architecture preserves source-of-truth semantics and how test automation, code quality, and dependency discipline help keep Visier DB sustainable.
 
 Cache-copy architecture | Security and governance | Engineering discipline
 
