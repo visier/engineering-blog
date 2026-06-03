@@ -217,7 +217,7 @@ So far, we've covered:
 - How **Visier DB** supports temporal, object-based analytics.
 - How **metrics** and **cohorts** are represented as time-aware, reusable concepts.
 
-In **Part 3**, we'll move beyond the data model and engine internals to look at:
+In **[Part 3](May-24-2026-Part-3-building-and-maintaining-visier-db-one-cached-copy-security-engineering-discipline.md)**, we'll move beyond the data model and engine internals to look at:
 
 - Our **one cached copy architecture and security model**.
 - The role of **test automation and code quality** in evolving the engine safely.
