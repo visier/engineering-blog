@@ -8,6 +8,17 @@
     <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ '/feed.xml' | absolute_url }}">
     <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    {% if site.google_analytics %}
+      <!-- Google tag (gtag.js) -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics | uri_escape }}"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', '{{ site.google_analytics | escape }}');
+      </script>
+    {% endif %}
   </head>
   <body>
     <header class="site-header" role="banner">

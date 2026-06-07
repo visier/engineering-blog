@@ -4,6 +4,7 @@ url: https://engineering.visier.com
 theme: minima
 markdown: kramdown
 permalink: pretty
+google_analytics: G-F5EKB401YF
 
 sass:
   style: compressed
