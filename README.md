@@ -58,7 +58,7 @@ bundle install
 Serve the GitHub Pages site locally from the `docs/` directory:
 
 ```bash
-bundle exec jekyll serve --source docs
+"$(brew --prefix ruby@3.3)/bin/bundle" exec jekyll serve --source docs
 ```
 
 Preview the site at `http://127.0.0.1:4000`.

@@ -245,6 +245,97 @@ img {
   max-width: 100%;
 }
 
+.diagram-zoom {
+  background: transparent;
+  border: 1px solid var(--visier-border);
+  border-radius: 8px;
+  cursor: zoom-in;
+  display: block;
+  line-height: 0;
+  margin: 1.1rem auto 0.45rem;
+  max-width: 100%;
+  padding: 0;
+}
+
+.diagram-zoom img {
+  border: 0;
+  margin: 0;
+}
+
+.diagram-zoom:hover {
+  border-color: var(--visier-accent);
+}
+
+.diagram-zoom:focus-visible {
+  outline: 3px solid rgba(0, 111, 143, 0.45);
+  outline-offset: 3px;
+}
+
+body.diagram-lightbox-open {
+  overflow: hidden;
+}
+
+.diagram-lightbox {
+  align-items: center;
+  background: rgba(7, 26, 37, 0.88);
+  display: flex;
+  inset: 0;
+  justify-content: center;
+  padding: 1.25rem;
+  position: fixed;
+  z-index: 10;
+}
+
+.diagram-lightbox[hidden] {
+  display: none;
+}
+
+.diagram-lightbox__dialog {
+  display: flex;
+  max-height: 100%;
+  max-width: min(1600px, 100%);
+  position: relative;
+}
+
+.diagram-lightbox__image {
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  border-radius: 6px;
+  margin: 0;
+  max-height: calc(100vh - 2.5rem);
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.diagram-lightbox__close {
+  align-items: center;
+  background: rgba(7, 26, 37, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  font-size: 1.6rem;
+  height: 2.25rem;
+  justify-content: center;
+  line-height: 1;
+  padding: 0 0 0.13rem;
+  position: absolute;
+  right: 0.55rem;
+  top: 0.55rem;
+  width: 2.25rem;
+  z-index: 1;
+}
+
+.diagram-lightbox__close:hover,
+.diagram-lightbox__close:focus-visible {
+  background: var(--visier-accent-dark);
+}
+
+.diagram-lightbox__close:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: 3px;
+}
+
 em {
   color: var(--visier-muted);
 }
