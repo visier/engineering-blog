@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="610" viewBox="0 0 1200 610" role="img" aria-labelledby="title desc">
+  <title id="title">Temporal states and the state immediately before a promotion</title>
+  <desc id="desc">A selected analysis interval overlaps two employee job states. A promotion event marks the boundary between People Analyst and Senior People Analyst. The priorState function selects People Analyst, the state immediately before the event.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#006f8f"/>
+    </marker>
+    <filter id="shadow" x="-10%" y="-20%" width="120%" height="150%">
+      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#14212b" flood-opacity="0.10"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="610" fill="#f6f8fa"/>
+  <text x="600" y="54" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="29" font-weight="700" fill="#071a25">The query needs the state immediately before the event</text>
+  <text x="600" y="85" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="16" fill="#657788">The promotion is grouped by the employee state immediately to its left within the analysis interval</text>
+
+  <rect x="205" y="125" width="790" height="58" rx="10" fill="#e5f4f7" stroke="#006f8f" stroke-width="2"/>
+  <text x="600" y="151" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="700" fill="#004f66">Selected analysis interval</text>
+  <text x="600" y="174" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="14" fill="#354858">Promotion events occurring from :period_start through :period_end</text>
+
+  <line x1="205" y1="183" x2="205" y2="485" stroke="#006f8f" stroke-width="2" stroke-dasharray="7 6"/>
+  <line x1="995" y1="183" x2="995" y2="485" stroke="#006f8f" stroke-width="2" stroke-dasharray="7 6"/>
+  <text x="205" y="512" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="700" fill="#004f66">:period_start</text>
+  <text x="995" y="512" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="700" fill="#004f66">:period_end</text>
+
+  <text x="125" y="248" text-anchor="end" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="700" fill="#14212b">Employment</text>
+  <rect x="150" y="218" width="850" height="48" rx="8" fill="#edf6ec" stroke="#82b366" stroke-width="2"/>
+  <text x="575" y="248" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="16" fill="#355b2c">Employee remains active across the job change</text>
+
+  <text x="125" y="350" text-anchor="end" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="700" fill="#14212b">Job state</text>
+  <g filter="url(#shadow)">
+    <rect x="150" y="305" width="450" height="86" rx="9" fill="#e8f2fb" stroke="#6c9bc3" stroke-width="2"/>
+    <rect x="600" y="305" width="400" height="86" rx="9" fill="#edf6ec" stroke="#82b366" stroke-width="2"/>
+  </g>
+  <text x="375" y="342" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="700" fill="#14212b">People Analyst</text>
+  <text x="375" y="369" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="14" fill="#657788">valid before the promotion</text>
+  <text x="800" y="342" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="700" fill="#14212b">Senior People Analyst</text>
+  <text x="800" y="369" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="14" fill="#657788">valid from the promotion onward</text>
+
+  <line x1="600" y1="195" x2="600" y2="450" stroke="#b04747" stroke-width="4"/>
+  <circle cx="600" cy="348" r="10" fill="#ffffff" stroke="#b04747" stroke-width="4"/>
+  <rect x="514" y="202" width="172" height="54" rx="9" fill="#fff1f1" stroke="#b04747" stroke-width="2"/>
+  <text x="600" y="226" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="700" fill="#852f2f">Promotion event</text>
+  <text x="600" y="247" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="13" fill="#657788">occurred_at</text>
+
+  <path d="M 572 430 C 515 463, 438 462, 384 405" fill="none" stroke="#006f8f" stroke-width="4" marker-end="url(#arrow)"/>
+  <rect x="357" y="449" width="326" height="66" rx="10" fill="#ffffff" stroke="#006f8f" stroke-width="2"/>
+  <text x="520" y="476" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="700" fill="#004f66">priorState(Internal_Placement)</text>
+  <text x="520" y="500" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="14" fill="#657788">selects the state immediately to the left</text>
+
+  <line x1="150" y1="550" x2="1050" y2="550" stroke="#657788" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="600" y="582" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="700" fill="#354858">TIME</text>
+</svg>

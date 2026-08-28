@@ -10,13 +10,19 @@ Subscribe to the RSS feed at [engineering.visier.com/feed.xml](https://engineeri
 
 ## Latest post
 
-### [Building and Maintaining Visier DB: One Cached Copy, Security, and Engineering Discipline](docs/May-24-2026-Part-3-building-and-maintaining-visier-db-one-cached-copy-security-engineering-discipline.md)
+### [Why Visier's Semantic Model Makes Hard Analytics Easier for Humans and AI Agents](docs/Aug-24-2026-why-visiers-semantic-model-makes-hard-analytics-easier.md)
 
-Part 3 of the series on how Visier's cache-copy architecture preserves source-of-truth semantics and how test automation, code quality, and dependency discipline help keep Visier DB sustainable.
+How Visier's semantic model turns time, relationships, concepts, and metrics into shared analytical context for human analysts and AI agents.
 
-Cache-copy architecture | Security and governance | Engineering discipline
+Semantic modeling | Temporal analytics | AI context
 
 ## Earlier posts
+
+### [Building and Maintaining Visier DB: One Cached Copy, Security, and Engineering Discipline](docs/May-24-2026-Part-3-building-and-maintaining-visier-db-one-cached-copy-security-engineering-discipline.md)
+
+Part 3 and conclusion of the series on how Visier's cache-copy architecture preserves source-of-truth semantics and how test automation, code quality, and dependency discipline help keep Visier DB sustainable.
+
+Cache-copy architecture | Security and governance | Engineering discipline
 
 ### [Inside Visier DB: Event Streams, Temporal Queries, Metrics, and Cohorts](docs/May-01-2026-Part-2-inside-visier-db-event-streams-temporal-queries-metrics-cohorts.md)
 
